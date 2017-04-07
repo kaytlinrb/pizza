@@ -3,47 +3,47 @@
 <head>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   <script src="js/jquery-3.2.0.js"></script>
   <script src="js/scripts.js"></script>
   <title>Garden Pizza</title>
 </head>
 <body>
-  <div class="container">
-    <div class="jumbotron"><h2>Garden Pizza Online Order</h2></div>
-    <div class="row">
-      <div class="col-sm-8">
-        <form id="pizza-form">
-          <div class="form-group">
-            <label for="inputSize">Select Size:</label>
-            <select class="form-control" id="inputSize">
-              <option>Small</option>
-              <option>Medium</option>
-              <option>Large</option>
-              <option>Extra-Large</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="inputTopping">Select Topping:</label>
-            <select class="form-control" id="inputTopping">
-              <option>Spinach</option>
-              <option>Mushroom</option>
-              <option>Broccoli</option>
-              <option>Avocado ($1 extra)</option>
-            </select>
-          </div>
-          <br>
-          <textarea name="name" rows="5" cols="65">Special Instructions...</textarea>
-          <button type="submit" class="btn btn-primary btn-block" id="order-button">Order Pizza</button>
-        </form>
-      </div>
-      <div class="col-sm-4">
-        <h4>Your Order:</h4>
-        <ul>
-        </ul>
+  <div class="jumbotron"><h2 id="gardenPizza">Garden Pizza Online Order</h2></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8">
+          <form id="pizza-form">
+            <div class="form-group">
+              <label for="inputSize">Select Size:</label>
+              <select class="form-control" id="inputSize">
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+                <option>Extra-Large</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="inputTopping">Select Topping:</label>
+              <select class="form-control" id="inputTopping">
+                <option>Spinach</option>
+                <option>Mushroom</option>
+                <option>Broccoli</option>
+                <option>Avocado ($1 extra)</option>
+              </select>
+            </div>
+            <br>
+            <textarea name="name" rows="5" cols="65">Special Instructions...</textarea>
+            <button type="submit" class="btn btn-primary btn-block" id="order-button">Order Pizza</button>
+          </form>
+        </div>
+        <div class="col-sm-4">
+          <h4>Order Confirmation:</h4>
+          <ul>
+          </ul>
+
       </div>
     </div>
-
   </div>
-
 </body>
 </html>

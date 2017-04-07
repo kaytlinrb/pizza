@@ -36,10 +36,10 @@ $(function(){
     var pizzaSizeInput = $("#inputSize").val();
     var toppingInput = $("#inputTopping").val();
 
-      var firstOrder = new Pizza(pizzaSize,topping);
+      var firstOrder = new Pizza(pizzaSizeInput,toppingInput);
       var pizzaPrice = firstOrder.costCalculator();
           console.log(pizzaPrice)
-      $("ul").append("<li>" + pizzaSizeInput + "</li>" + "<li>" + toppingInput + "</li>" + "<li>" + pizzaPrice + "</li>" )
+      $("ul").append("<li>" + pizzaSizeInput + "</li>" + "<li>" + toppingInput + "</li>" + "<li>" + "$ " + pizzaPrice + "</li>" )
 
 
 

@@ -1,3 +1,17 @@
 li{
   text-decoration: none;
 }
+#gardenPizza{
+  text-align: center;
+  font-family: "Pacifico",'cursive';
+  font-size: 40px
+}
+.jumbotron{
+  padding: 13;
+  background-color: gray;
+}
+body{
+  background-image: url("../img/veggie.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
