@@ -26,7 +26,7 @@
 
 	* _Download repository **[here](https://github.com/kaytlinrb/pizza.git)** from github by cloning_
 	* _Access index.html in a browser of your choice_
-	* _Optionally access through gh-pages **[here](https://kaytlinrb.github.io/ping-pong)**_
+	* _Optionally access through gh-pages **[here](https://kaytlinrb.github.io/pizza)**_
 
 	_{**git bash needed to clone from repository**}_
 ## Known Bugs

@@ -1,17 +1,23 @@
 //Backend Logic
-function Pizza(size,topping,cost){
-  this.size = size
-  this.topping = topping
-  this.cost = cost
-}
+// function Pizza(size,topping,cost){
+//   this.size = size
+//   this.topping = topping
+//   this.cost = cost
+// }
 
 
 //User Interface
 $(function(){
-  $("").submit(function(event){
+  var pizzaSizeInput = $("#inputSize").val();
+  var toppingInput = $("#inputTopping").val();
+
+  $("#pizza-options").submit(function(event){
     event.preventDefault();
+      console.log(pizzaSizeInput)
+      console.log(toppingInput);
+
+  });
+// pizzaOrder = new Pizza(size,topping,cost)
 
 
-    
-  })
-})
+});
