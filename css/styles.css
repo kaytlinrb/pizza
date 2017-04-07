@@ -1,17 +1,39 @@
+
+
+
 li{
-  text-decoration: none;
+  list-style-type: none;
+  font-size: 40px
 }
 #gardenPizza{
   text-align: center;
   font-family: "Pacifico",'cursive';
+  color:green;
   font-size: 40px
 }
-.jumbotron{
-  padding: 13;
-  background-color: gray;
+#banner{
+
+  background-color: lightgreen;
 }
 body{
   background-image: url("../img/veggie.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+textarea{
+  width: inherit;
+}
+.container{
+  text-align: center;
+}
+.orderConfirmation{
+  display: none;
+}
+img{
+  margin-top: 50px
+}
+
+}
+h2{
+  font-style: italic;
 }

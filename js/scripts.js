@@ -1,7 +1,8 @@
 //Backend Logic
-function Pizza (pizzaSize,topping) {
+function Pizza (pizzaSize,topping,topping2) {
   this.pizzaSize = pizzaSize;
   this.topping = topping;
+  this.topping2 = topping2;
 }
 
 Pizza.prototype.costCalculator = function(){
@@ -22,6 +23,15 @@ Pizza.prototype.costCalculator = function(){
   }
 
   if (this.topping === "Avocado") {
+    price = price + 2
+  }
+  else{
+    price = price + 1
+  }
+  if (this.topping2 === "Avocado") {
+    price = price + 2
+  }
+  else{
     price = price + 1
   }
 
@@ -34,17 +44,21 @@ $(function(){
   $("#pizza-form").submit(function(event){
     event.preventDefault();
     var pizzaSizeInput = $("input[name=sizeChoice]:checked").val()
-    var toppingInput = $("#inputTopping").val();
+    var toppingInput1 = $("#topping1").val();
+    var toppingInput2 = $("topping2").val();
 
-      var firstOrder = new Pizza(pizzaSizeInput,toppingInput);
+
+      var firstOrder = new Pizza(pizzaSizeInput,toppingInput1,toppingInput2);
       var pizzaPrice = firstOrder.costCalculator();
-          console.log(pizzaPrice)
-      $("ul").append("<li>" + pizzaSizeInput + "</li>" + "<li>" + toppingInput + "</li>" + "<li>" + "$ " + pizzaPrice + "</li>" )
+      $(".orderConfirmation").show();
 
-
-
+      $("ul").append("<li>" + pizzaSizeInput + "</li>" + "<li>" + toppingInput1 + "</li>" + "<li>" + "$ " + pizzaPrice + "</li>" )
 
   });
+
+  $("#confirmation-button").click(function(){
+    alert("Your Pizza is on its' way! It should arrive in 40-60min!")
+  })
 
 
 });
