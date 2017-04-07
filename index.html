@@ -18,7 +18,7 @@
           <div class="form-group" "radioGroup">
             <div class="radio">
               <h2>Choose a Size:</h4>
-              <label><input type="radio" value="Small" name="sizeChoice">Small</label>
+              <label><input type="radio" value="Small" name="sizeChoice" checked="checked">Small</label>
             </div>
             <div class="radio">
               <label><input type="radio" value="Medium" name="sizeChoice">Medium</label>
@@ -42,7 +42,7 @@
           </div>
             <div class="form-group">
             <h2>Select Second Topping:</h4>
-            <select class="form-control" id="topping1">
+            <select class="form-control" id="topping2">
               <option>Spinach</option>
               <option>Mushroom</option>
               <option>Bell Pepper</option>
@@ -58,10 +58,11 @@
       <div class="col-sm-5">
         <div class="orderConfirmation">
         <h2>Order Confirmation:</h2>
-        <img src="img/pizza.jpg" alt="image of pizza">
-        <ul>
-        </ul>
-        <br>
+        <img id="pizza" src="img/pizza.jpg" alt="image of pizza">
+        <h4 id="size-display"></h4>
+        <h4 id="topping1-display"></h4>
+        <h4 id="topping2-display"></h4>
+        <h4>$<span id="price-display"></span></h4>
         <button type="button" class="btn btn-primary"id="confirmation-button">Confirm Order</button>
         </div>
       </div>

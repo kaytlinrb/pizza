@@ -45,19 +45,21 @@ $(function(){
     event.preventDefault();
     var pizzaSizeInput = $("input[name=sizeChoice]:checked").val()
     var toppingInput1 = $("#topping1").val();
-    var toppingInput2 = $("topping2").val();
+    var toppingInput2 = $("#topping2").val();
 
 
       var firstOrder = new Pizza(pizzaSizeInput,toppingInput1,toppingInput2);
       var pizzaPrice = firstOrder.costCalculator();
       $(".orderConfirmation").show();
 
-      $("ul").append("<li>" + pizzaSizeInput + "</li>" + "<li>" + toppingInput1 + "</li>" + "<li>" + "$ " + pizzaPrice + "</li>" )
+      $("#size-display").text(pizzaSizeInput);
+      $("#topping1-display").text (toppingInput1);
+      $("#topping2-display").text(toppingInput2); $("#price-display").text(pizzaPrice);
 
   });
 
   $("#confirmation-button").click(function(){
-    alert("Your Pizza is on its' way! It should arrive in 40-60min!")
+    alert("Your Pizza is on its way! It should arrive in 40-60min")
   })
 
 

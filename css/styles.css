@@ -28,9 +28,12 @@ textarea{
 }
 .orderConfirmation{
   display: none;
+  background-color: lightgreen;
+
 }
-img{
-  margin-top: 50px
+#pizza{
+  margin-top: 50px;
+  width:300px;
 }
 
 }
