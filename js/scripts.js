@@ -1,24 +1,50 @@
 //Backend Logic
-// function Pizza(size,topping,cost){
-//   this.size = size
-//   this.topping = topping
-//   this.cost = cost
-// }
+function Pizza (pizzaSize,topping) {
+  this.pizzaSize = pizzaSize;
+  this.topping = topping;
+}
 
+Pizza.prototype.costCalculator = function(){
+
+  var price = 0
+
+  if (this.pizzaSize === "Small") {
+    price = price + 10
+  }
+  else if (this.pizzaSize === "Medium") {
+    price = price + 12
+  }
+  else if (this.pizzaSize === "Large") {
+    price = price + 13
+  }
+  else {
+    price = price + 14
+  }
+
+  if (this.topping === "Avocado") {
+    price = price + 1
+  }
+
+  return price
+}
 
 //User Interface
 $(function(){
-  var pizzaSizeInput = $("#inputSize").val();
-  var toppingInput = $("#inputTopping").val();
 
-  $("#pizza-options").submit(function(event){
+  $("#pizza-form").submit(function(event){
     event.preventDefault();
-      console.log(pizzaSizeInput)
-      console.log(toppingInput);
-      $("ul").append("<li>" + pizzaSizeInput + "</li>" +"<li>" + toppingInput + "</li>" )
+    var pizzaSizeInput = $("#inputSize").val();
+    var toppingInput = $("#inputTopping").val();
+
+      var firstOrder = new Pizza(pizzaSize,topping);
+      var pizzaPrice = firstOrder.costCalculator();
+          console.log(pizzaPrice)
+      $("ul").append("<li>" + pizzaSizeInput + "</li>" + "<li>" + toppingInput + "</li>" + "<li>" + pizzaPrice + "</li>" )
+
+
+
 
   });
-// pizzaOrder = new Pizza(size,topping,cost)
 
 
 });
