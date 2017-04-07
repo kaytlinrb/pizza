@@ -33,7 +33,7 @@ $(function(){
 
   $("#pizza-form").submit(function(event){
     event.preventDefault();
-    var pizzaSizeInput = $("#inputSize").val();
+    var pizzaSizeInput = $("input[name=sizeChoice]:checked").val()
     var toppingInput = $("#inputTopping").val();
 
       var firstOrder = new Pizza(pizzaSizeInput,toppingInput);
