@@ -15,6 +15,7 @@ $(function(){
     event.preventDefault();
       console.log(pizzaSizeInput)
       console.log(toppingInput);
+      $("ul").append("<li>" + pizzaSizeInput + "</li>" +"<li>" + toppingInput + "</li>" )
 
   });
 // pizzaOrder = new Pizza(size,topping,cost)
