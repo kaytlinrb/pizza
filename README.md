@@ -10,15 +10,15 @@
 
 ## Specs
 
-###It can recognize when user pushes a button
+###It creates a pizza object
 
-###It allows user to select pizza size
+###It creates a pizza cost calculator function that uses if statements to increase the price of the pizza if certain conditions are met
 
-###It can return pizza size back to user
+###It gathers the input from the user when the submit button is pressed
 
-###It can return toping and pizza size back to user
+###It passes the user input information through the cost calculator function
 
-###It can return a price for the pizza ordered
+###It returns the selections made and the cost of the pizza to the DOM
 
 
 
